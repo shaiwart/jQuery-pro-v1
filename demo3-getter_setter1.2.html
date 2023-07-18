@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        var b="";
+        $("#btn").click(function()
+        {let r=$('#rd1');
+            let result=r.prop('checked')
+            $("#DD").text(result);
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <form id="frm" action="a.html">
+    <input id="rd1" type="radio" name="ch" value="+"/>+
+    <input  id="rd2" type="radio" name="ch" value="-"/>-
+    <input type="button" id="btn" value="get data"/>
+    </form></pre>        
+    <div id="DD">dd</div>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            let p = $("#dd"); 
+            p.click(function() {
+                p.mousedown(function() {
+                    var a = $("p"); 
+                    // a.html("value set"); // ye dono me doubt hai. Changes not observed. 
+                    a.text("value set"); 
+                })
+            })
+        })
+    </script>
+</head>
+
+
+<body>
+    <p id="dd"> <b>para 1</b></p>
+    <p>para 2</p>
+    <p>para 3</p>
+</body>
+    
+</html>
